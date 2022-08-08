@@ -12,7 +12,7 @@ public class LoginPage {
         this.driver = driver;
     }
 
-    public WebElement getEmailInput () {
+    public WebElement getEmailInput() {
         return driver.findElement(By.id("email"));
     }
 

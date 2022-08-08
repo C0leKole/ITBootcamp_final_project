@@ -53,6 +53,7 @@ public class LoginTests extends BasicTest {
         Assert.assertTrue(messagePopUpPage.getWrongPasswordPopUpText().contains("Wrong password"),
                 "Message doesn't contain 'Wrong password'");
         Assert.assertTrue(driver.getCurrentUrl().contains("/login"), "URL doesn't contain '/login'");
+
     }
 
 
@@ -65,6 +66,8 @@ public class LoginTests extends BasicTest {
         Thread.sleep(2000);
         Assert.assertTrue(driver.getCurrentUrl().contains("/home"),
                 "Current URL doesn't contain '/home'");
+
+
 
     }
 

@@ -8,6 +8,7 @@ public class SignUpTests extends BasicTest {
     public void visistTheSignUpPage() {
         navPage.getSignUpButton().click();
         Assert.assertTrue(driver.getCurrentUrl().contains("/signup"), "URL route doesn't contain '/signup'");
+
     }
 
     @Test(priority = 20)
@@ -57,7 +58,7 @@ public class SignUpTests extends BasicTest {
         signUpPage.getConfirmPasswordInput().sendKeys("12345");
         signUpPage.getSignMeUpButton().click();
 
-
+        navPage.getHomeButton().click();
         messagePopUpPage.waitVerifyPopUp();
         Assert.assertTrue(messagePopUpPage.getVerifyYourAccountPopUpText().contains("IMPORTANT:"),
                 "Message doesn't contain 'IMPORTANT: Verify your account'");

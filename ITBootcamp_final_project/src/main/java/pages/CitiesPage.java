@@ -50,8 +50,7 @@ public class CitiesPage {
 
     public WebElement getDeleteButton() {
         return driver.findElement(
-                By.xpath("//button[contains(@class, 'v-btn v-btn--flat v-btn--text theme--light " +
-                        "v-size--default red--text text--lighten3')]"));
+                By.xpath("//button[contains(@class, 'v-btn v-btn--text theme--light v-size--default red--text text--lighten3')]"));
     }
 
     public void waitTableRowsToBe(int index) {

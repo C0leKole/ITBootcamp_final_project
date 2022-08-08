@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 public class AdminCitiesTest extends BasicTest {
     @Test(priority = 10)
-    public void VisitsTheAdminCitiesPageAndListCities() {
+    public void visitsTheAdminCitiesPageAndListCities() {
         navPage.getSignUpButton().click();
         navPage.getLoginButton().click();
         loginPage.getEmailInput().sendKeys("admin@admin.com");
